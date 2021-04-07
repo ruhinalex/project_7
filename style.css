@@ -1,0 +1,334 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+}
+
+/* navigation start */
+
+.navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.navigation .ul1 {
+    list-style: none;
+    display: flex;
+    background-color: black;
+}
+
+.navigation .ul1 .li1:last-child {
+    margin-left: auto;
+}
+
+.navigation .ul1 .li1 .a1 {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.navigation .ul1 .li1 .a1:hover {
+    color: #333;
+    background-color: #ccc;
+}
+
+.drop-menu {
+    position: relative;
+}
+
+.drop-down {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    display: none;
+}
+
+.drop-down .li2 a {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    color: black;
+    width: 100%;
+}
+
+.drop-down .li2 a:hover {
+    background-color: #ccc;
+}
+
+.drop-menu:hover .drop-down {
+    display: block;
+}
+
+/* navigation end */
+
+/* image slider start */
+
+/* image slider end */
+
+/* band start */
+
+.band {
+    padding: 50px 15px;
+}
+
+.band h1 {
+    text-align: center;
+    padding: 50px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.band h3 {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.band .muted {
+    color: #333;
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.band .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.band .cards div {
+    flex-basis: 25%;
+}
+
+/* band end */
+
+/* tour start */
+
+.tour {
+    background-color: black;
+    padding: 50px 0;
+}
+
+.tour .heading {
+    text-align: center;
+    padding: 50px 0 15px 0;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #ccc;
+}
+
+.tour .sub-heading {
+    text-align: center;
+    padding: 15px 0;
+    color: #999;
+    opacity: 0.75;
+    font-style: italic;
+}
+
+.tour .tour-table {
+    background-color: #fff;
+    margin: 15px 0;
+}
+
+.tour .tour-table div {
+    padding: 12px 24px;
+}
+
+.tour .tour-table div:last-child {
+    display: flex;
+}
+
+.tour .tour-table span:first-child {
+    color: #555;
+    padding: 5px 10px;
+}
+
+.tour .tour-table .mark {
+    padding: 5px 10px;
+    background-color: #f44336;
+    color: white;
+}
+
+.tour .tour-table .mark2 {
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    margin-left: auto;
+}
+
+.tour .cards {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 50px 0;
+}
+
+.tour .cards .card {
+    flex-basis: 32%;
+    background-color: #fff;
+    padding-bottom: 7.5px;
+}
+
+.tour .cards .card .information {
+    padding: 0 15px;
+}
+
+.tour .cards .card img {
+    padding-bottom: 7.5px;
+}
+
+.tour .cards .card .information h3, .tour .cards .card .information h4, .tour .cards .card .information p {
+    padding: 7.5px 0;
+}
+
+.tour .cards .card .information button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white;
+    border: none;
+    margin: 7.5px 0;
+}
+
+.tour .cards .card .information button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+/* tour end */
+
+/* contact start */
+
+.contact {
+    padding: 75px 0;
+}
+
+.contact h1 {
+    text-align: center;
+    padding: 7.5px 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+
+.contact h3 {
+    text-align: center;
+    padding: 7.5px 0;
+    font-style: italic;
+    opacity: 0.6;
+    font-weight: lighter;
+    font-size: 15px;
+}
+
+.contact .contact-row {
+    padding: 30px 0;
+}
+
+.contact .col {
+    flex-basis: 50%;
+}
+
+.contact ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+.contact ul li {
+    padding: 5px 0;
+}
+
+.contact ul li i {
+    padding-right: 10px;
+}
+
+.contact input[type="text"], .contact input[type="email"] {
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+    margin: 4px 0;
+}
+
+.contact input:first-child {
+    margin-right: 15px;
+}
+
+.contact .contact-row3 {
+    flex-direction: column;
+}
+
+.contact input[type="submit"] {
+    display: inline-block;
+    margin-left: auto;
+    padding: 12px 24px;
+    margin-top: 15px;
+    background-color: #000;
+    color: #ccc;
+    border: none;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #ccc;
+    color: #000;
+}
+
+/* contact end */
+
+/* footer start */
+
+.footer {
+    padding: 75px 0;
+}
+
+.footer .social-icons {
+    text-align: center;
+    font-size: 25px;
+}
+
+.footer .social-icons i {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.footer .social-icons i:hover {
+    opacity: 1;
+}
+
+.footer p {
+    color: black;
+    opacity: 0.6;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer p a {
+    color: black;
+}
+
+/* footer end */
